@@ -24,6 +24,13 @@ Requires Python 3.10 or later.
 pip install -r requirements.txt
 export GROQ_API_KEY=your-key   # or OPENAI_API_KEY / ANTHROPIC_API_KEY
 ```
+
+On Windows PowerShell:
+```powershell
+pip install -r requirements.txt
+$env:GROQ_API_KEY = "your-key"   # current window only; or OPENAI_API_KEY / ANTHROPIC_API_KEY
+setx GROQ_API_KEY "your-key"     # optional: keep it for new windows (reopen PowerShell after)
+```
 If no key is set, the commands below prompt you to type it in.
 
 ```bash
